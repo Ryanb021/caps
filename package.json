@@ -1,0 +1,12 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "# LAB: Event Driven Applications",
+  "main": "eventPool.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

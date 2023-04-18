@@ -2,7 +2,7 @@
 
 const eventPool = require('../eventPool');
 const handler = require('./handler');
-ject.mock('../eventPool', () => {
+jest.mock('../eventPool', () => {
   return {
     emit: jest.fn(),
   };

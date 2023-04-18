@@ -5,8 +5,8 @@ let eventPool =  require('./eventPool');
 require ('./driver/index');
 require ('./vendor/index');
 
-let Caps = require ('caps');
-let caps = new Caps();
+let Chance = require ('chance');
+let chance = new Chance();
 
 eventPool.on('pickup', payload => {
   console.log({
@@ -36,6 +36,6 @@ eventPool.on ('delivered', payload => {
 
 setInterval (() => {
   console.log('hub js initialized');
-  let deliveryCompany = caps.company ();
+  let deliveryCompany = chance.company ();
   eventPool.emit ('VENDOR', deliveryCompany);
 }, 10000);

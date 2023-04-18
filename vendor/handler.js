@@ -2,16 +2,16 @@
 
 const eventPool = require('../eventPool');
 
-let Caps = require('caps');
-let caps = new Caps();
+let Chance = require('chance');
+let chance = new Chance();
 
 module.exports = (deliveryCompany) => {
 
   const payload = {
     deliveryCompany: deliveryCompany,
-    orderId: caps.guid(),
-    customer: caps.name(),
-    address: caps.address(),
+    orderId: chance.guid(),
+    customer: chance.name(),
+    address: chance.address(),
   };
 
   console.log('VENDOR: Thank you for delivering my order');

@@ -1,10 +1,18 @@
 'use strict';
 
-const eventPool = require('../eventPool');
+// const eventPool = require('../eventPool');
 const handler = require('./handler');
+const {io} = require('socket.io-client');
+const socket = io.connect ('http://localhost:3003/caps');
 
-eventPool.on('VENDOR', (deliveryCompany) => {
+socket.on('VENDOR', (deliveryCompany) => {
   setTimeout(() => {
     handler(deliveryCompany);
-  }, 5000);
+  }, 1000);
 });
+
+// eventPool.on('VENDOR', (deliveryCompany) => {
+//   setTimeout(() => {
+//     handler(deliveryCompany);
+//   }, 5000);
+// });

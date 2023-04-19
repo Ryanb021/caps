@@ -3,7 +3,8 @@
 // const eventPool = require('../eventPool');
 const socket = require('../../socket');
 const handler = require('./handler');
-const { orderDeliver, orderGenerate } = require('./handler');
+//const orderDeliver = require('./handler');
+const { orderGenerate, orderDeliver } = require('../flower-vendor/handler');
 
 jest.mock('../../socket.js', () => {
   return {
@@ -15,7 +16,7 @@ jest.mock('../../socket.js', () => {
 console.log = jest.fn();
 
 describe('Vendor Handler', () => {
-  xtest('event should emit', () => {
+  test('event should emit', () => {
     const payload = {
       deliveryCompany: 'Arkham Delivery',
       orderId: '147258369',
@@ -23,7 +24,7 @@ describe('Vendor Handler', () => {
       address: 'Gotham City',
     };
 
-    handler(payload);
+    orderDeliver(payload);
     expect(socket.emit).toString('in-transit', payload);
   });
 });

@@ -159,7 +159,7 @@ EVENT { event: 'delivered',
 
 ## UML
 
-- In progress
+![CAPS UML](https://user-images.githubusercontent.com/120413183/233161151-330ebbee-3eb2-4e32-ac87-09bfae289c94.png)
 
 ## Successful Deployment Link on Render:
 

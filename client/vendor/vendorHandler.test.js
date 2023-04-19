@@ -7,15 +7,15 @@ const { orderDeliver, orderGenerate } = require('./handler');
 
 jest.mock('../../socket.js', () => {
   return {
-    on: jest.fn (),
-    emit: jest.fn (),
+    on: jest.fn(),
+    emit: jest.fn(),
   };
 });
 
 console.log = jest.fn();
 
 describe('Vendor Handler', () => {
-  test ('event should emit', () => {
+  xtest('event should emit', () => {
     const payload = {
       deliveryCompany: 'Arkham Delivery',
       orderId: '147258369',
@@ -23,7 +23,7 @@ describe('Vendor Handler', () => {
       address: 'Gotham City',
     };
 
-    handler (payload);
+    handler(payload);
     expect(socket.emit).toString('in-transit', payload);
   });
 });

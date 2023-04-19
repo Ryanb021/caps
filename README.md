@@ -159,6 +159,6 @@ EVENT { event: 'delivered',
 
 ## UML
 
-- In progress
+- ![CAPS UML](https://user-images.githubusercontent.com/120413183/233190725-9a0b01ce-1cbe-4a92-bdcd-b3fc85dbff8f.png)
 
 Refer to the the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for the complete lab submission process and expectations.

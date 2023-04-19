@@ -17,5 +17,5 @@ module.exports = (deliveryCompany) => {
   };
 
   console.log('VENDOR: Thank you for delivering my order');
-  eventPool.emit('pickup', payload);
+  socket.emit('pickup', payload);
 };

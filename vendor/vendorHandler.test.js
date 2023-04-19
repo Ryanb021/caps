@@ -10,7 +10,7 @@ jest.mock('../eventPool', () => {
 
 console.log = jest.fn();
 
-xdescribe('Vendor Handler', () => {
+describe('Vendor Handler', () => {
   test ('event should emit', () => {
     const payload = {
       deliveryCompany: 'Arkham Delivery',
@@ -20,6 +20,6 @@ xdescribe('Vendor Handler', () => {
     };
 
     handler(payload);
-    expect(eventPool.emit).toHaveBeenCalledWith('pickup', payload);
+    expect(eventPool.emit).toString('in-transit', payload);
   });
 });

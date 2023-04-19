@@ -23,7 +23,7 @@ describe('Vendor Handler', () => {
       address: 'Gotham City',
     };
 
-    handler(payload);
+    handler (payload);
     expect(socket.emit).toString('in-transit', payload);
   });
 });

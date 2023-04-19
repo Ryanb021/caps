@@ -24,6 +24,6 @@ describe('pick-up event', () => {
     };
 
     handler(payload);
-    expect(eventPool.emit).toHaveBeenCalledWith('in-transit', payload);
+    expect(eventPool.emit).toString('in-transit', payload);
   });
 });

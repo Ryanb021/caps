@@ -2,9 +2,7 @@
 
 // const eventPool = require('../eventPool');
 const {io} = require('socket.io-client');
-const socket = require('http://localhost:3003/caps');
-
-
+const socket = io.connect('http://localhost:3003/caps');
 
 module.exports = (payload) => {
   console.log('DRIVER: Picked up order', payload.orderId);

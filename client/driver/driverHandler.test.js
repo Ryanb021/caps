@@ -16,7 +16,7 @@ describe('pick-up event', () => {
       event: 'pickup',
       time: new Date(),
       payload: {
-        store: 'Arkham Shipping',
+        store: '1-6969-Arkham-Flowers',
         orderId: '147258369',
         customer: 'Bruce Wayne',
         address: 'Gotham City',

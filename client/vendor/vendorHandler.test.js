@@ -5,7 +5,7 @@ const socket = require('../../socket');
 const handler = require('./handler');
 const { orderDeliver, orderGenerate } = require('./handler');
 
-jest.mock('../socket.js', () => {
+jest.mock('../../socket.js', () => {
   return {
     on: jest.fn (),
     emit: jest.fn (),

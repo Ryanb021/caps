@@ -18,5 +18,4 @@ module.exports = (payload) => {
     socket.emit('delivered', payload.orderId);
   }, 1000);
 
-  process.exit();
 };

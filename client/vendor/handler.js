@@ -25,7 +25,9 @@ const orderGenerate = (socket, payload = null) => {
 
 const orderDeliver = payload => {
   console.log('VENDOR: Thank you for delivering ', payload.orderId);
-}
+
+  process.exit();
+};
 
 // module.exports = (deliveryCompany) => {
 

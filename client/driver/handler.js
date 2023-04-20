@@ -17,4 +17,6 @@ module.exports = (payload) => {
     console.log(`DRIVER: delivered, ${payload.orderId}`);
     socket.emit('delivered', payload.orderId);
   }, 1000);
+
+  process.exit();
 };
